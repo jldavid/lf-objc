@@ -2,7 +2,7 @@ import Foundation
 import AVFoundation
 
 // MARK: HTTPStream
-public class HTTPStream: NSObject {
+@objc public class HTTPStream: NSObject {
 
     #if os(iOS)
     public var syncOrientation:Bool {

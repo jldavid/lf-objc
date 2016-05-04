@@ -1,7 +1,7 @@
 import Foundation
 import AVFoundation
 
-final class AudioSessionUtil {
+@objc final class AudioSessionUtil {
     private init() {
     }
 

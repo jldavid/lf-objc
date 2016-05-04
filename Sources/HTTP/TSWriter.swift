@@ -3,7 +3,7 @@ import Foundation
 import CryptoSwift
 
 // MARK: - TSWriter
-class TSWriter {
+@objc class TSWriter {
     static let defaultPMTPID:UInt16 = 4096
     static let defaultVideoPID:UInt16 = 256
     static let defaultAudioPID:UInt16 = 257

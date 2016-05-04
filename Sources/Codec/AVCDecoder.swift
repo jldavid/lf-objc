@@ -5,7 +5,7 @@ import VideoToolbox
 import CoreFoundation
 
 // MARK: - AVCDecoder
-final class AVCDecoder: NSObject {
+@objc final class AVCDecoder: NSObject {
     static let defaultAttributes:[NSString: AnyObject] = [
         kCVPixelBufferPixelFormatTypeKey: Int(kCVPixelFormatType_32BGRA),
         kCVPixelBufferIOSurfacePropertiesKey: [:],

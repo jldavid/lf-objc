@@ -26,7 +26,7 @@ protocol PSITableSyntax {
 }
 
 // MARK: - ProgramSpecific
-class ProgramSpecific: PSIPointer, PSITableHeader, PSITableSyntax {
+@objc class ProgramSpecific: PSIPointer, PSITableHeader, PSITableSyntax {
     static let reservedBits:UInt8 = 0x03
     static let defaultTableIDExtension:UInt16 = 1
 

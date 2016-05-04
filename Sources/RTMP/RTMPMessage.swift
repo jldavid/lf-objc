@@ -1,7 +1,7 @@
 import Foundation
 import AVFoundation
 
-class RTMPMessage {
+@objc class RTMPMessage {
 
     enum Type:UInt8 {
         case ChunkSize = 1
@@ -95,7 +95,7 @@ extension RTMPMessage: CustomStringConvertible {
 /**
  * @see 5.4.1. Set Chunk Size (1)
  */
-final class RTMPSetChunkSizeMessage: RTMPMessage {
+@objc final class RTMPSetChunkSizeMessage: RTMPMessage {
     
     override var type:Type {
         return .ChunkSize

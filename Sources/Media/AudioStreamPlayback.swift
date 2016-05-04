@@ -2,7 +2,7 @@ import Foundation
 import AudioToolbox
 import AVFoundation
 
-public class AudioStreamPlayback: NSObject {
+@objc public class AudioStreamPlayback: NSObject {
     static let numberOfBuffers:Int = 3
     static let defaultBufferSize:UInt32 = 128 * 1024
     static let maxPacketDescriptions:Int = 12

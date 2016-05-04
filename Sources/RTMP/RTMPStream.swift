@@ -1,7 +1,7 @@
 import Foundation
 import AVFoundation
 
-public class RTMPStream: EventDispatcher {
+@objc public class RTMPStream: EventDispatcher {
 
     public static var rootPath:String = NSTemporaryDirectory()
 

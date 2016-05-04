@@ -18,7 +18,7 @@ public enum EventPhase:UInt8 {
     case DISPOSE = 3
 }
 
-public class Event:NSObject {
+@objc public class Event:NSObject {
     public static let SYNC:String = "sync"
     public static let RTMP_STATUS:String = "rtmpStatus"
 
@@ -51,7 +51,7 @@ public class Event:NSObject {
     }
 }
 
-public class EventDispatcher: NSObject, IEventDispatcher {
+@objc public class EventDispatcher: NSObject, IEventDispatcher {
 
     private var target:AnyObject? = nil
 

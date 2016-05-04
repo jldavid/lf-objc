@@ -3,7 +3,7 @@ import AVFoundation
 
 // @reference https://developer.apple.com/library/ios/technotes/tn2236/_index.html
 // @reference https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html
-final class AACEncoder: NSObject {
+@objc final class AACEncoder: NSObject {
     static let supportedSettingsKeys:[String] = [
         "bitrate",
         "profile",

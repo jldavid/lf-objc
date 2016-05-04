@@ -3,7 +3,7 @@ import AVFoundation
 import VideoToolbox
 import CoreFoundation
 
-final class AVCEncoder: NSObject {
+@objc final class AVCEncoder: NSObject {
 
     static let supportedSettingsKeys:[String] = [
         "fps",

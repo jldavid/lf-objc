@@ -219,7 +219,7 @@ extension FLVTag: CustomStringConvertible {
 }
 
 // MARK: - RTMPRecorder
-final class RTMPRecorder: NSObject {
+@objc final class RTMPRecorder: NSObject {
 
     static let defaultVersion:UInt8 = 1
     static let headerSize:UInt32 = 13

@@ -6,7 +6,7 @@ protocol TSReaderDelegate: class {
 }
 
 // MARK: - TSReader
-class TSReader {
+@objc class TSReader {
     weak var delegate:TSReaderDelegate?
 
     private var eof:UInt64 = 0

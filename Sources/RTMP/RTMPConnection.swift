@@ -2,7 +2,7 @@ import Foundation
 import CryptoSwift
 
 // MARK: - Responder
-public class Responder: NSObject {
+@objc public class Responder: NSObject {
 
     private var result:(data:[Any?]) -> Void
     private var status:((data:[Any?]) -> Void)?
@@ -27,7 +27,7 @@ public class Responder: NSObject {
 }
 
 // MARK: - RTMPConnection
-public class RTMPConnection: EventDispatcher {
+@objc public class RTMPConnection: EventDispatcher {
 
     public enum Code:String {
         case CallBadVersion       = "NetConnection.Call.BadVersion"

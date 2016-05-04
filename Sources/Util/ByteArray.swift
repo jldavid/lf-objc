@@ -52,7 +52,7 @@ protocol ByteArrayConvertible {
     func clear() -> Self
 }
 
-public class ByteArray: ByteArrayConvertible {
+@objc public class ByteArray: ByteArrayConvertible {
     static let sizeOfInt8:Int = 1
     static let sizeOfInt16:Int = 2
     static let sizeOfInt24:Int = 3

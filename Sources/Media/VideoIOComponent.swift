@@ -14,7 +14,7 @@ struct VideoIOData {
     var presentationDuration:CMTime
 }
 
-final class VideoIOComponent: NSObject {
+@objc final class VideoIOComponent: NSObject {
     let lockQueue:dispatch_queue_t = dispatch_queue_create(
         "com.github.shogo4405.lf.VideoIOComponent.lock", DISPATCH_QUEUE_SERIAL
     )

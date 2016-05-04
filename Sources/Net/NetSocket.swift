@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: NetSocket
-class NetSocket: NSObject {
+@objc class NetSocket: NSObject {
     static let defaultWindowSizeC:Int = 8 * 1024
 
     var inputBuffer:[UInt8] = []

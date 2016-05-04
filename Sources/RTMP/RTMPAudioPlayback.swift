@@ -1,7 +1,7 @@
 import Foundation
 import AudioToolbox
 
-final class RTMPAudioPlayback: AudioStreamPlayback {
+@objc final class RTMPAudioPlayback: AudioStreamPlayback {
     private var config:AudioSpecificConfig?
 
     func onMessage(message:RTMPAudioMessage) {

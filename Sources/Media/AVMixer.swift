@@ -4,7 +4,7 @@ import UIKit
 import Foundation
 import AVFoundation
 
-public class AVMixer: NSObject {
+@objc public class AVMixer: NSObject {
 
     static let supportedSettingsKeys:[String] = [
         "sessionPreset",

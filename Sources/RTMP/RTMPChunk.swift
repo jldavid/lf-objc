@@ -1,6 +1,6 @@
 import Foundation
 
-final class RTMPChunk: NSObject {
+@objc final class RTMPChunk: NSObject {
     static let control:UInt16 = 0x02
     static let command:UInt16 = 0x03
     static let audio:UInt16 = 0x04

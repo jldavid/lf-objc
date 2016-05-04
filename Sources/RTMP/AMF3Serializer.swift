@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: - AMFReference
-class AMFReference {
+@objc class AMFReference {
     var strings:[String] = []
     var objects:[Any] = []
     

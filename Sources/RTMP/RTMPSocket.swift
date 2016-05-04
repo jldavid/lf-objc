@@ -7,7 +7,7 @@ protocol RTMPSocketDelegate: IEventDispatcher {
 }
 
 // MARK: - RTMPSocket
-final class RTMPSocket: NSObject {
+@objc final class RTMPSocket: NSObject {
 
     enum ReadyState:UInt8 {
         case Initialized = 1

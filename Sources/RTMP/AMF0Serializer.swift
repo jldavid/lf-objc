@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: - AMFSerializerUtil
-class AMFSerializerUtil {
+@objc class AMFSerializerUtil {
     private static var classes:[String: AnyClass] = [:]
 
     static func getClassByAlias(name:String) -> AnyClass? {
@@ -64,7 +64,7 @@ protocol AMFSerializer: ByteArrayConvertible {
  * -seealso: http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/amf/pdf/amf0-file-format-specification.pdf
  */
 // MARK: - AMF0Serializer
-class AMF0Serializer: ByteArray {
+@objc class AMF0Serializer: ByteArray {
     enum Type:UInt8 {
         case Number      = 0x00
         case Bool        = 0x01

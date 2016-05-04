@@ -72,7 +72,7 @@ extension RTMPSharedObjectEvent: CustomStringConvertible {
 }
 
 // MARK: - RTMPSharedObject
-public class RTMPSharedObject: EventDispatcher {
+@objc public class RTMPSharedObject: EventDispatcher {
 
     static private var remoteSharedObjects:[String: RTMPSharedObject] = [:]
     static public func getRemote(name: String, remotePath: String, persistence: Bool) -> RTMPSharedObject {
